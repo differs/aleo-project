@@ -5,6 +5,10 @@ FROM python:3.9-alpine
 RUN apk update
 RUN pip install --no-cache-dir pipenv
 
+# Installing packages
+RUN apk update
+RUN pip install --no-cache-dir pipenv
+
 # Defining working directory and adding source code
 WORKDIR /usr/src/app
 COPY Pipfile Pipfile.lock bootstrap.sh ./
