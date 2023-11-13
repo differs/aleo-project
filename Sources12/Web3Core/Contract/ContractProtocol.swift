@@ -101,6 +101,18 @@ public protocol ContractProtocol {
     /// Parsed from ABI or a default constructor with no input arguments.
     var constructor: ABI.Element.Constructor {get}
 
+
+    /// All values from ``events``.
+    var allEvents: [ABI.Element.Event] {get}
+
+    /// Errors filtered from ``abi`` and mapped to their unchanged ``ABI/Element/EthError/name``.
+    var errors: [String: ABI.Element.EthError] {get}
+
+    /// All values from ``errors``.
+    var allErrors: [ABI.Element.EthError] {get}
+
+    /// Parsed from ABI or a default constructor with no input arguments.
+    var constructor: ABI.Element.Constructor {get}
     /// Required initializer that is capable of reading ABI in JSON format.
     /// - Parameters:
     ///   - abiString: ABI string in JSON format.
