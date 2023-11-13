@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import aleoLogo from "./assets/aleo.svg";
 import "./App.css";
-import helloworld_program from "../helloworld/build/main.aleo?raw";
+import helloworld_program from "../helloworld_helloworld_20133123/build/main.aleo?raw";
 import { AleoWorker } from "./workers/AleoWorker.js";
 
 const aleoWorker = AleoWorker();
